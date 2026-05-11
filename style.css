@@ -6,125 +6,35 @@
 
 body {
   font-family: sans-serif;
-  background-color: #ffffff;
-  color: #111111;
+  color: #111;
+  background-color: #fff;
 }
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .portfolio {
   width: 100%;
-  overflow: hidden;
 }
 
-section,
-footer {
+section {
   width: 100%;
+  min-height: 720px;
 }
 
 .container {
   width: 1280px;
+  height: 720px;
   margin: 0 auto;
   position: relative;
 }
 
-/* 720px 한 화면 섹션 */
-
-.intro,
-.profile,
-.contents,
-.plany-intro,
-.plany-overview,
-.plany-problem,
-.plany-hypothesis,
-.plany-design-concept,
-.nyam-intro,
-.nyam-overview,
-.nyam-problem,
-.nyam-hypothesis,
-.nyam-design-concept,
-.graphic-intro,
-.footer {
-  height: 720px;
-}
-
-.intro .container,
-.profile .container,
-.contents .container,
-.plany-intro .container,
-.plany-overview .container,
-.plany-problem .container,
-.plany-hypothesis .container,
-.plany-design-concept .container,
-.nyam-intro .container,
-.nyam-overview .container,
-.nyam-problem .container,
-.nyam-hypothesis .container,
-.nyam-design-concept .container,
-.graphic-intro .container,
-.footer .container {
-  height: 720px;
-}
-
-/* 세로로 길어질 섹션 */
-
-.plany-ui,
-.nyam-ui,
-.graphic-design {
-  padding: 120px 0;
-}
-
-.plany-ui .container,
-.nyam-ui .container,
-.graphic-design .container {
-  min-height: 720px;
-}
-
-/* 임시 배경색 */
+/* intro */
 
 .intro {
-  background: linear-gradient(90deg, #dce6f8 0%, #4d8cff 100%);
+  background: linear-gradient(90deg, #dce8ff 0%, #4f8cff 100%);
 }
-
-.profile {
-  background-color: #ffffff;
-}
-
-.contents {
-  background-color: #ffffff;
-}
-
-.plany-intro,
-.plany-overview,
-.plany-problem,
-.plany-hypothesis,
-.plany-design-concept,
-.plany-ui {
-  background-color: #ffffff;
-}
-
-.nyam-intro,
-.nyam-overview,
-.nyam-problem,
-.nyam-hypothesis,
-.nyam-design-concept,
-.nyam-ui {
-  background-color: #fff3df;
-}
-
-.graphic-intro,
-.graphic-design {
-  background-color: #ffffff;
-}
-
-.footer {
-  background-color: #6fa8ff;
-}
-
-/* intro */
 
 .intro-label {
   position: absolute;
@@ -132,40 +42,45 @@ footer {
   left: 44px;
 
   font-size: 16px;
-  font-weight: 400;
-
-  color: #111111;
+  color: #111;
 }
 
 .intro-text {
   position: absolute;
-  top: 270px;
-  left: 150px;
+  top: 300px;
+  left: 155px;
 }
 
 .intro-text h1 {
-  font-size: 72px;
-  font-weight: 700;
+  font-size: 64px;
   line-height: 1;
+  font-weight: 700;
+  color: #fff;
 
-  color: #ffffff;
-
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .intro-text p {
   font-size: 28px;
+  line-height: 1.25;
   font-weight: 700;
-  line-height: 1.4;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .intro-image {
   position: absolute;
+  top: 148px;
+  right: 155px;
 
-  top: 120px;
-  right: 120px;
+  width: 350px;
+}
 
-  width: 420px;
+/* 임시 확인용 */
+
+.profile {
+  background-color: #fff;
+}
+
+.contents {
+  background-color: #fff;
 }
