@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.portfolio {
+  width: 100%;
+  overflow: hidden;
+}
+
+section,
+footer {
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 720px 한 화면 섹션 */
+
+.intro,
+.profile,
+.contents,
+.plany-intro,
+.plany-overview,
+.plany-problem,
+.plany-hypothesis,
+.plany-design-concept,
+.nyam-intro,
+.nyam-overview,
+.nyam-problem,
+.nyam-hypothesis,
+.nyam-design-concept,
+.graphic-intro,
+.footer {
+  height: 720px;
+}
+
+.intro .container,
+.profile .container,
+.contents .container,
+.plany-intro .container,
+.plany-overview .container,
+.plany-problem .container,
+.plany-hypothesis .container,
+.plany-design-concept .container,
+.nyam-intro .container,
+.nyam-overview .container,
+.nyam-problem .container,
+.nyam-hypothesis .container,
+.nyam-design-concept .container,
+.graphic-intro .container,
+.footer .container {
+  height: 720px;
+}
+
+/* 세로로 길어질 섹션 */
+
+.plany-ui,
+.nyam-ui,
+.graphic-design {
+  padding: 120px 0;
+}
+
+.plany-ui .container,
+.nyam-ui .container,
+.graphic-design .container {
+  min-height: 720px;
+}
+
+/* 임시 배경색 */
+
+.intro {
+  background: linear-gradient(90deg, #dce6f8 0%, #4d8cff 100%);
+}
+
+.profile {
+  background-color: #ffffff;
+}
+
+.contents {
+  background-color: #ffffff;
+}
+
+.plany-intro,
+.plany-overview,
+.plany-problem,
+.plany-hypothesis,
+.plany-design-concept,
+.plany-ui {
+  background-color: #ffffff;
+}
+
+.nyam-intro,
+.nyam-overview,
+.nyam-problem,
+.nyam-hypothesis,
+.nyam-design-concept,
+.nyam-ui {
+  background-color: #fff3df;
+}
+
+.graphic-intro,
+.graphic-design {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #6fa8ff;
+}
+
+/* intro */
+
+.intro-label {
+  position: absolute;
+  top: 36px;
+  left: 44px;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #111111;
+}
+
+.intro-text {
+  position: absolute;
+  top: 270px;
+  left: 150px;
+}
+
+.intro-text h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #ffffff;
+
+  margin-bottom: 28px;
+}
+
+.intro-text p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: #ffffff;
+}
+
+.intro-image {
+  position: absolute;
+
+  top: 120px;
+  right: 120px;
+
+  width: 420px;
+}
