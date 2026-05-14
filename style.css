@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   color: #111;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 img {
@@ -18,16 +19,36 @@ img {
   width: 100%;
 }
 
+/* 전체 배경 기준 */
+
 section {
   width: 100%;
-  min-height: 720px;
+  min-height: 1080px;
+  position: relative;
 }
+
+/* 실제 작업 영역 */
 
 .container {
   width: 1280px;
-  height: 720px;
+  height: 1080px;
   margin: 0 auto;
   position: relative;
+}
+
+/* 공통 라벨 */
+
+.intro-label,
+.profile-label,
+.contents-label,
+.project-label {
+  position: absolute;
+
+  top: 100px;
+  left: -220px;
+
+  font-size: 16px;
+  color: #111;
 }
 
 /* 인트로 */
@@ -36,53 +57,34 @@ section {
   background: linear-gradient(90deg, #dce8ff 0%, #4f8cff 100%);
 }
 
-.intro-label {
-  position: absolute;
-  top: 36px;
-  left: 44px;
-
-  font-size: 16px;
-  color: #111;
-}
-
 .intro-text {
   position: absolute;
-  top: 300px;
+  top: 360px;
   left: 155px;
 }
 
 .intro-text h1 {
-  font-size: 64px;
+  font-size: 88px;
   line-height: 1;
   font-weight: 700;
   color: #fff;
 
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .intro-text p {
-  font-size: 28px;
-  line-height: 1.25;
+  font-size: 36px;
+  line-height: 1.3;
   font-weight: 700;
   color: #fff;
 }
 
 .intro-image {
   position: absolute;
-  top: 148px;
-  right: 155px;
+  top: 220px;
+  right: 120px;
 
-  width: 350px;
-}
-
-/* 임시 확인용 */
-
-.profile {
-  background-color: #fff;
-}
-
-.contents {
-  background-color: #fff;
+  width: 470px;
 }
 
 /* 프로필 */
@@ -91,95 +93,87 @@ section {
   background-color: #fff;
 }
 
-.profile-label {
-  position: absolute;
-  top: 36px;
-  left: 44px;
-
-  font-size: 16px;
-  color: #111;
-}
-
 .profile-left {
   position: absolute;
-  top: 158px;
-  left: 207px;
+  top: 240px;
+  left: 160px;
 }
 
 .profile-left h2 {
-  font-size: 34px;
+  font-size: 48px;
   line-height: 1;
   font-weight: 700;
 
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .birth {
-  font-size: 26px;
+  font-size: 32px;
   line-height: 1;
-  margin-bottom: 14px;
+
+  margin-bottom: 22px;
 }
 
 .profile-image {
-  width: 253px;
-  height: 253px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
 
   border: 1px solid #111;
   border-radius: 0 72px 72px 72px;
 
-  margin-bottom: 14px;
+  margin-bottom: 22px;
 }
 
 .contact p {
-  font-size: 25px;
-  line-height: 1.3;
+  font-size: 28px;
+  line-height: 1.5;
 }
 
 .profile-right {
   position: absolute;
-  top: 88px;
-  left: 670px;
+  top: 190px;
+  left: 720px;
 
-  width: 520px;
+  width: 560px;
 }
 
 .profile-section h3 {
-  font-size: 34px;
+  font-size: 42px;
   line-height: 1;
   font-weight: 700;
 
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 }
 
 .profile-item {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .item-title {
-  font-size: 23px;
-  line-height: 1.25;
+  font-size: 28px;
+  line-height: 1.4;
   font-weight: 700;
 }
 
 .item-desc {
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.5;
   font-weight: 700;
   color: #999;
 }
 
 .license-section {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 .skills-section {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 .skills-list {
   display: flex;
-  gap: 34px;
+  gap: 60px;
 }
 
 .skills-list ul {
@@ -187,8 +181,8 @@ section {
 }
 
 .skills-list li {
-  font-size: 25px;
-  line-height: 1.15;
+  font-size: 30px;
+  line-height: 1.4;
   font-weight: 700;
 }
 
@@ -198,31 +192,22 @@ section {
   background-color: #fff;
 }
 
-.contents-label {
-  position: absolute;
-  top: 36px;
-  left: 44px;
-
-  font-size: 16px;
-  color: #111;
-}
-
 .contents-title {
   position: absolute;
-  top: 92px;
-  left: 35px;
+  top: 180px;
+  left: 0;
 
-  font-size: 40px;
+  font-size: 62px;
   line-height: 1;
   font-weight: 700;
 }
 
 .contents-line {
   position: absolute;
-  top: 138px;
-  left: 35px;
+  top: 270px;
+  left: 0;
 
-  width: 1210px;
+  width: 1280px;
   height: 1px;
 
   background-color: #d9d9d9;
@@ -230,98 +215,75 @@ section {
 
 .contents-grid {
   position: absolute;
-  top: 208px;
-  left: 35px;
+  top: 340px;
+  left: 0;
 
   display: flex;
-  gap: 22px;
+  gap: 28px;
 }
 
 .contents-item {
-  width: 392px;
+  width: 408px;
 }
 
 .contents-number {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1;
   font-weight: 500;
 
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .contents-text {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .contents-text h3 {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.4;
   font-weight: 700;
 
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .contents-text p {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.5;
   color: #111;
 }
 
 .contents-item img {
-  width: 392px;
-  height: 220px;
+  width: 408px;
+  height: 250px;
   object-fit: cover;
 
   border: 1px solid #d9d9d9;
 
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .contents-item span {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
   color: #888;
 }
 
-/* 프로젝트 1 인트로 */
+/* 프로젝트 인트로 */
 
 .project-intro {
   background-color: #fff;
 }
 
-.project-label {
-  position: absolute;
-  top: 36px;
-  left: 44px;
-
-  font-size: 16px;
-  color: #111;
-}
-
 .project-text {
   position: absolute;
-  top: 180px;
-  left: 100px;
+  top: 280px;
+  left: 0;
 
   z-index: 2;
 }
 
 .project-text h2 {
-  font-size: 86px;
-  line-height: 1;
-  font-weight: 700;
-  color: #3f6fe0;
-
-  margin-bottom: 22px;
-}
-
-.project-text h2 span {
-  font-size: 56px;
-  margin-left: 10px;
-}
-
-.project-text h3 {
-  font-size: 40px;
+  font-size: 110px;
   line-height: 1;
   font-weight: 700;
   color: #3f6fe0;
@@ -329,11 +291,25 @@ section {
   margin-bottom: 28px;
 }
 
+.project-text h2 span {
+  font-size: 68px;
+  margin-left: 12px;
+}
+
+.project-text h3 {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  color: #3f6fe0;
+
+  margin-bottom: 40px;
+}
+
 .project-tags {
   display: flex;
-  gap: 12px;
+  gap: 16px;
 
-  margin-bottom: 72px;
+  margin-bottom: 90px;
 }
 
 .project-tags span {
@@ -341,13 +317,13 @@ section {
   align-items: center;
   justify-content: center;
 
-  height: 42px;
-  padding: 0 22px;
+  height: 52px;
+  padding: 0 28px;
 
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid #d9d9d9;
 
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
 
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -356,7 +332,7 @@ section {
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .info-row {
@@ -365,23 +341,23 @@ section {
 }
 
 .info-row p {
-  width: 110px;
+  width: 130px;
 
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #3f6fe0;
 }
 
 .info-row span {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: #3f6fe0;
 }
 
 .project-image {
   position: absolute;
-  right: 40px;
-  bottom: 40px;
+  right: -40px;
+  bottom: 120px;
 
-  width: 860px;
+  width: 980px;
 }
