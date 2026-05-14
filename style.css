@@ -53,6 +53,8 @@ section {
 
 /* 인트로 */
 
+/* 인트로 */
+
 .intro {
   background: linear-gradient(90deg, #dce8ff 0%, #4f8cff 100%);
 }
@@ -60,7 +62,8 @@ section {
 .intro-text {
   position: absolute;
   top: 360px;
-  left: 155px;
+  left: 120px;
+  z-index: 2;
 }
 
 .intro-text h1 {
@@ -73,18 +76,19 @@ section {
 }
 
 .intro-text p {
-  font-size: 36px;
-  line-height: 1.3;
+  font-size: 32px;
+  line-height: 1.35;
   font-weight: 700;
   color: #fff;
 }
 
 .intro-image {
   position: absolute;
-  top: 220px;
-  right: 120px;
+  top: 190px;
+  right: 80px;
 
-  width: 470px;
+  width: 420px;
+  z-index: 1;
 }
 
 /* 프로필 */
@@ -748,9 +752,9 @@ section {
   background: #a8b1ea;
 }
 
-/* 화면 소개 - 세로형 */
+/* 유저 플로우 */
 
-.screen-intro {
+.project-user-flow {
   width: 100%;
   min-height: 1590px;
   position: relative;
@@ -758,14 +762,14 @@ section {
   overflow: hidden;
 }
 
-.screen-container {
+.user-flow-container {
   width: 1280px;
   height: 1590px;
   margin: 0 auto;
   position: relative;
 }
 
-.screen-label {
+.user-flow-label {
   position: absolute;
   top: 44px;
   left: -220px;
@@ -774,7 +778,7 @@ section {
   color: #111;
 }
 
-.screen-title {
+.user-flow-title {
   position: absolute;
   top: 132px;
   left: 0;
@@ -785,178 +789,154 @@ section {
   color: #3f6fe0;
 }
 
-.screen-bg-circle {
+.user-flow-bg-circle {
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(135deg, #eaf1ff 0%, #3f6fe0 100%);
   z-index: 0;
 }
 
-.circle-top {
+.user-flow-circle-top {
   width: 760px;
   height: 760px;
   top: -180px;
   right: -420px;
 }
 
-.circle-bottom {
+.user-flow-circle-bottom {
   width: 820px;
   height: 820px;
   left: -520px;
   bottom: -260px;
 }
 
-.screen-phone {
+.user-flow-line {
+  position: absolute;
+
+  top: 270px;
+  left: 280px;
+
+  width: 910px;
+  height: 1005px;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.user-flow-phone {
   position: absolute;
   display: block;
   z-index: 2;
+
+  width: 240px;
+  height: 510px;
+  object-fit: contain;
 }
 
+/* 폰 위치 */
 .phone-01 {
-  top: 184px;
-  left: 32px;
-  width: 260px;
+  top: 180px;
+  left: 145px;
 }
 
 .phone-02 {
-  top: 392px;
-  left: 610px;
-  width: 255px;
+  top: 390px;
+  left: 672px;
 }
 
 .phone-03 {
-  top: 392px;
-  left: 860px;
-  width: 255px;
+  top: 390px;
+  left: 920px;
 }
 
 .phone-04 {
   top: 850px;
-  left: 35px;
-  width: 260px;
+  left: 145px;
 }
 
 .phone-05 {
   top: 850px;
-  left: 300px;
-  width: 260px;
+  left: 393px;
 }
 
 .phone-06 {
-  top: 1020px;
-  right: 100px;
-  width: 250px;
+  top: 1025px;
+  right: 95px;
 }
 
-.step {
+/* Step 박스 */
+.user-flow-step {
   position: absolute;
   z-index: 4;
 
-  padding: 8px 12px;
-  border-radius: 8px;
+  width: 88px;
+  height: 37px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
   background-color: #3f6fe0;
   color: #fff;
 
   font-size: 24px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .step-01 {
-  top: 250px;
-  left: 330px;
+  top: 252px;
+  left: 409px;
 }
 
 .step-02 {
-  top: 325px;
-  left: 690px;
+  top: 330px;
+  left: 752px;
 }
 
 .step-03 {
-  top: 905px;
-  left: 600px;
+  top: 892px;
+  left: 530px;
 }
 
 .step-04 {
-  top: 1260px;
-  left: 660px;
+  top: 1247px;
+  left: 625px;
 }
 
-.step-text {
+/* 설명 글 */
+.user-flow-desc {
   position: absolute;
   z-index: 3;
 
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.45;
-  font-weight: 700;
+  font-weight: 500;
   color: #999;
 }
 
 .text-01 {
-  top: 305px;
-  left: 330px;
+  top: 306px;
+  left: 409px;
+  width: 300px;
 }
 
 .text-02 {
-  top: 325px;
-  left: 790px;
-  width: 420px;
+  top: 336px;
+  left: 856px;
+  width: 350px;
 }
 
 .text-03 {
-  top: 955px;
-  left: 600px;
-  width: 560px;
+  top: 948px;
+  left: 530px;
+  width: 600px;
 }
 
 .text-04 {
-  top: 1310px;
-  left: 610px;
-  width: 360px;
+  top: 1302px;
+  left: 585px;
+  width: 390px;
   text-align: center;
-}
-
-.dash {
-  position: absolute;
-  z-index: 1;
-  border: 2px dashed #3f6fe0;
-  border-radius: 0;
-}
-
-.dash-01 {
-  top: 266px;
-  left: 300px;
-  width: 435px;
-  height: 130px;
-  border-left: none;
-  border-bottom: none;
-}
-
-.dash-02 {
-  top: 396px;
-  left: 735px;
-  width: 375px;
-  height: 500px;
-  border-top: none;
-  border-left: none;
-}
-
-.dash-03 {
-  top: 915px;
-  left: 290px;
-  width: 710px;
-  height: 360px;
-  border-right: none;
-  border-top: none;
-}
-
-.dash-04 {
-  top: 1278px;
-  left: 555px;
-  width: 430px;
-  height: 1px;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
 }
